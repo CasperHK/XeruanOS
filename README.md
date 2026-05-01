@@ -34,11 +34,12 @@ A Capability-based microkernel ensuring high-precision control.
 
 ## 2. 【玄 · 路徑】The Stealth Path (Communication)
 A zero-copy data fabric that bypasses CPU bottlenecks while maintaining safety.
-
+```
 // Xeruan Reflex Logic Examplelet reflex_action = ReflexArc::new(sensor_input)
     .with_safety_limit(KineticConstraint::Strict)
     .enforce_p2p_transfer() // Direct to Actuator
-    .verify_integrity(); 
+    .verify_integrity();
+```
 
 ## 3. 【盾 · 結界】The Shield Realm (AI Resilience)
 An embedded Mojo-driven anomaly engine that defends against automated attacks.
@@ -56,12 +57,18 @@ An embedded Mojo-driven anomaly engine that defends against automated attacks.
 ## 5-Minute Build
 
 # 1. Clone the repository
+```
 git clone https://github.com
 cd xeruan
+```
 # 2. Setup dev environment
+```
 ./scripts/setup_autonomous_env.sh
+```
 # 3. Compile and simulate in QEMU
+```
 make run-headless
+```
 
 ------------------------------
 ## 📅 Roadmap to the Frontier
